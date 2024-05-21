@@ -229,7 +229,7 @@ img {
     width: 264px;
     height: 112px;
     background-color: #f4f4fd;
-    order: 1px solid #8e8f99;
+    border: 1px solid #8e8f99;
     border-radius: 4px;
     padding: 24px 100px;
 }
@@ -287,6 +287,7 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
+    padding-bottom: 8px;
 }
 
 .team-list .title-team-list,
@@ -294,18 +295,27 @@ img {
     text-align: center;
 }
 
-.employees .team-list-sthcsets{
-    /*display: flex;
+.team-list-sthcsets{
+display: flex;
+gap: 24px;
+justify-content: center;
+}
+
+.team-list-sthcsets .link-icon{
+    justify-content: center;
     align-items: center;
-    gap: 24px;
-    padding-top: 8px;
-    justify-content:center;*/
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
 }
+
 .team-list-sthcsets .icon{
-fill: #4d5ae5;
+    fill: #f4f4fd;
 }
-.team-list-sthcsets .link-icon:hover .icon {
-fill: #31d0aa;
+.team-list-sthcsets .link-icon:hover {
+    background-color: #404bbf;
 }
 
                         /*Our Portfolio*/
@@ -370,6 +380,8 @@ fill: #31d0aa;
     background-color: #2e2f42;
     color: white;
     padding: 100px 0;
+    height: 312px;
+    display: flex;
 }
 
 .logo-footer {
@@ -400,7 +412,44 @@ fill: #31d0aa;
 
 .footers .footers-sthcsets{
     display: flex;
-    gap: 24px;
-    padding-top: 8px;
+    gap: 16px;
     justify-content: center;
+}
+
+.footer-social p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    padding-bottom: 16px;
+}
+
+.footers-logo{
+    display: flex;
+    flex-direction: column;
+    max-width: 264px;
+}
+
+.footer-social{
+max-width: 208px;
+}
+
+
+.footers-sthcsets .link-icon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+}
+
+.footers-sthcsets .icon {
+    fill: #f4f4fd;
+}
+
+.footers-sthcsets .link-icon:hover {
+    background-color: #31d0aa;
 }
