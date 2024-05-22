@@ -90,6 +90,9 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-contacts {
@@ -108,6 +111,9 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     padding: 24px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts:hover,
@@ -138,7 +144,7 @@ img {
     url(../images/background-1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 1440px;
 }
 
 .effective-solutions {
@@ -150,7 +156,6 @@ img {
     color: #fff;
     max-width: 496px;
     margin: 0 auto;
-    
 }
 
 .order-button {
@@ -171,6 +176,9 @@ img {
     background: #4d5ae5;
     margin-top: 48px;
     margin: 48px auto 0 auto;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover,
@@ -309,6 +317,9 @@ justify-content: center;
     height: 40px;
     border-radius: 50%;
     background-color: #4d5ae5;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-list-sthcsets .icon{
@@ -367,21 +378,20 @@ justify-content: center;
 }
 
 .list-portfolio .services {
-    /*border: 1px solid #e7e9fc;
-    border-top: none;
-    width: 360px;
-    height: 420px;
-    background: #fff;*/
     width: calc((100% - 48px) / 3);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.list-portfolio .services:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
                         /*footer*/
 .footers {
     background-color: #2e2f42;
     color: white;
     padding: 100px 0;
-    height: 312px;
-    display: flex;
 }
 
 .logo-footer {
@@ -425,16 +435,14 @@ justify-content: center;
     padding-bottom: 16px;
 }
 
-.footers-logo{
+.container-footer {
     display: flex;
-    flex-direction: column;
-    max-width: 264px;
+    gap: 120px;
 }
 
 .footer-social{
 max-width: 208px;
 }
-
 
 .footers-sthcsets .link-icon {
     justify-content: center;
@@ -444,6 +452,9 @@ max-width: 208px;
     height: 40px;
     border-radius: 50%;
     background-color: #4d5ae5;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footers-sthcsets .icon {
