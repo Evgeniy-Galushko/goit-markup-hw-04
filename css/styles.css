@@ -43,6 +43,9 @@ img {
                     /* header */
 .page-headers {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
 .navigation {
@@ -90,16 +93,26 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    position: relative;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.navigation-list .navigatio-studio{
+    color: #404bbf;
+}
+
 .navigation-list .navigatio-studio:after{
         display: block;
+        position: absolute;
+        left: 0;
         right: 0;
+        bottom: -1px;
         width: 48px;
         height: 4px;
+        border-radius: 2px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         background-color: #404bbf;
         content: "";
 }
@@ -151,9 +164,11 @@ img {
         rgba(46, 47, 66, 0.7)
     ),
     url(../images/background-1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1440px;
+    min-width: 1440px;
 }
 
 .effective-solutions {
@@ -333,7 +348,8 @@ justify-content: center;
 .team-list-sthcsets .icon{
     fill: #f4f4fd;
 }
-.team-list-sthcsets .link-icon:hover {
+.team-list-sthcsets .link-icon:hover,
+.team-list-sthcsets .link-icon:focus{
     background-color: #404bbf;
 }
 
@@ -459,24 +475,28 @@ justify-content: center;
     
 }
 
+.footers-logo{
+    margin-right: 120px
+}
+
 .footers .footers-sthcsets{
     display: flex;
     gap: 16px;
     justify-content: center;
 }
 
-.footer-social p{
+.footer-social .footer-social-p{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .container-footer {
     display: flex;
-    gap: 120px;
+    align-items: baseline,
 }
 
 .footer-social{
@@ -500,6 +520,7 @@ max-width: 208px;
     fill: #f4f4fd;
 }
 
-.footers-sthcsets .link-icon:hover {
+.footers-sthcsets .link-icon:hover,
+.footers-sthcsets .link-icon:focus{
     background-color: #31d0aa;
 }
