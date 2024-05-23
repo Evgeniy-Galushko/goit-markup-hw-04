@@ -95,14 +95,13 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation .navigation-list a:after{
+.navigation-list .navigatio-studio:after{
         display: block;
-            right: 0;
-            width: 48px;
-            height: 4px;
-            /*margin-top: 20px;*/
-            background-color: #404bbf;
-            content: "";
+        right: 0;
+        width: 48px;
+        height: 4px;
+        background-color: #404bbf;
+        content: "";
 }
 
 .list-contacts {
@@ -198,7 +197,6 @@ img {
 
                     /*our qualities*/
 .qualities {
-
     padding: 120px 0;
     display: flex;
 }
@@ -240,7 +238,7 @@ img {
 }
 
 .advantages {
-    width: 264px;
+    width: calc((100% - 3 * 24) / 4);
 }
 
 .list-qualities .icon-advantages{
